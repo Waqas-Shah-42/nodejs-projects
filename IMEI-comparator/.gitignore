@@ -1,0 +1,103 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Waqas-Shah-42 
+electron
+/
+electron
+Public
+Code
+Issues
+1.6k
+Pull requests
+131
+Actions
+Projects
+9
+Security
+11
+Insights
+electron/.gitignore
+@nornagon
+nornagon test: fix some broken globs for spec-main (#35439)
+Latest commit 3eb593d 16 days ago
+ History
+ 17 contributors
+@zcbenz@MarshallOfSound@jkleinsc@nornagon@zeke@deepak1556@tarruda@kevinsawicki@omrilitov@miniak@kwonoj@kanemontreuil
+56 lines (46 sloc)  732 Bytes
+
+.DS_Store
+.env
+.gclient_done
+**/.npmrc
+.tags*
+.vs/
+.vscode/
+*.log
+*.pyc
+*.sln
+*.swp
+*.VC.db
+*.VC.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.xcodeproj
+/.idea/
+/dist/
+node_modules/
+SHASUMS256.txt
+**/package-lock.json
+compile_commands.json
+.envrc
+
+# npm package
+/npm/dist
+/npm/path.txt
+/npm/checksums.json
+
+.npmrc
+
+# Generated API definitions
+electron-api.json
+electron.d.ts
+
+# Spec hash calculation
+spec/.hash
+
+# Eslint Cache
+.eslintcache*
+
+# Generated native addon files
+/spec/fixtures/native-addon/echo/build/
+
+# If someone runs tsc this is where stuff will end up
+ts-gen
+
+# Used to accelerate CI builds
+.depshash
+.depshash-target
+
+# Used to accelerate builds after sync
+patches/mtime-cache.json
+
+spec/fixtures/logo.png
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://cdn.jsdelivr.net/npm/handsontable@8.1.0/dist/handsontable.full.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/handsontable@8.1.0/dist/handsontable.full.min.css" rel="stylesheet"
+  media="screen">
+
+<head>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQTD8C9NYG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LQTD8C9NYG');
+</script>
+  
+  <meta charset="UTF-8">
+  <title>(Waqas Shah) IMEIs comparators</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+
+  <script src="script.js" defer></script>
+</head>
+
+
+<body style="background-color:#e4ebf8">
+  <h1 style="border-style: dashed;text-align: center;background-color: #93b4f8;padding-top: 20px;padding-bottom: 20px; margin-left:0;">
+    (Waqas Shah) IMEIs comparators
+  </h1>  
+  <!--
+  <p>This app is using node <script>
+      document.write(process.versions.node)
+    </script>,
+    Chrome <script>
+      document.write(process.versions.chrome)
+    </script>,
+    and Electron <script>
+      document.write(process.versions.electron)
+    </script>.</p>
+  -->
+
+  <p>This application is used to check if all the IMEIs list sent to the OEM match the ones recieved from the
+    OEM</p>
+
+
+    <div style="background-color:#dbe4f5;text-align: center;padding-bottom: 20px;">
+      <div style=" background-color:#dbe4f5; text-align: center;min-width:500px;float:left;">
+        <h3>PTA list</h3>
+        <div id="example">
+          <!-- this div is used to hold the handsontable -->
+        </div>
+      </div>
+
+
+      <div style="background-color:#dbe4f5;text-align: center;float:left;">
+        <h3>&nbsp;&nbsp;  OEM list  &nbsp;&nbsp;</h3>
+        <div id="example2">
+          <!-- this div is used to hold the handsontable -->
+        </div>
+
+        
+      </div>
+      <br style="clear:both" />
+      <div style="width:100%;background-color:#dbe4f5; float:right;"> </div>
+    </div>
+
+  </p>
+
+  <div>
+    <br style="clear:both" />
+    
+    <button style="font-size: 16px;" type="button" id="verify" onclick="verify()">Verify</button>
+  </div>
+
+  <h2>This Application is made by <b>Waqas Shah</b></h2>
+
+</body>
+
+</html>
